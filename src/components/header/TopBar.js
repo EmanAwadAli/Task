@@ -10,7 +10,7 @@ const TopBar = () => {
                 <div className="site-logo">
                     <button className="btn"><i className="icon-bars"></i></button>
                     {/* Logo */}
-                    <h1 id="logo"><Link to="/Task"><Logo/></Link></h1>
+                    <h1 id="logo"><Link to="/Task/"><Logo/></Link></h1>
                 </div>
                 {/* Ending Logo */}
 

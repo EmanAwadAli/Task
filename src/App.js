@@ -116,7 +116,7 @@ class App extends Component {
         <Suspense fallback={<Spinner></Spinner>}>
           <Routes>
             <Route 
-                path="/Task"
+                path="/Task/"
                 element={
                   <SingleProduct
                     product={this.state.product}
