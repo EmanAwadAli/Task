@@ -15,7 +15,7 @@ const Cart = ( { cartItems, removeFromCart}  ) => {
     return (
         /* Starting Cart SideNav */
         <div id="cartsideNav">
-            <span className="closebtn closecart"><img src={'/images/close.svg'} alt="&times;" className="img-fluid"/></span>
+            <span className="closebtn closecart"><img src={'./images/close.svg'} alt="&times;" className="img-fluid"/></span>
             <h2 className="heading"> My Cart </h2>
             {
                 cartItems.length > 0 &&
