@@ -68,9 +68,6 @@ npm i react-slick --save
 npm i swiper
 ```
 ###### Start Your Project
-
-=======
-###### Start Your Project
 ```
 npm start
 ```
