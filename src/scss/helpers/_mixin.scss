@@ -1,0 +1,51 @@
+@mixin prefix($property, $value) {
+    -webkit-#{$property}: $value;
+    -moz-#{$property}: $value;
+    -ms-#{$property}: $value;
+    -o-#{$property}: $value;
+    #{$property}: $value;
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-between {
+    @include flex;
+    justify-content: space-between;
+}
+
+@mixin flex-center {
+    @include flex;
+    justify-content: center;
+}
+
+
+@mixin border-radius($value) {
+    @include prefix(border-radius,$value);
+}
+
+@mixin circle($dimensions) {
+    @include prefix(border-radius,50%);
+    width: $dimensions;
+    height: $dimensions;
+}
+
+@mixin btnstyle($bg-color, $color) { 
+    padding: 0 20px;
+    text-align: center;
+    background: $bg-color;
+    color: $color;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    @include border-radius(30px)
+}
+
+@mixin transition {
+    transition: all .3s ease-in-out
+}
+
