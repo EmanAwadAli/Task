@@ -15,7 +15,7 @@ const StarRate = ( { stars  }) => {
             {
                 allStars.map((star, index)=> {
                     return (
-                        <li key={star + index}><img src={`../images/${star}.png`} alt="star" /></li>
+                        <li key={star + index}><img src={`./images/${star}.png`} alt="star" /></li>
                     );
                 })
             }                                        
