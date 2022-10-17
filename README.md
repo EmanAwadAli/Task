@@ -36,7 +36,7 @@ In order to run this project you will need to install [node.js](https://nodejs.o
 ###### Clone Project
 
 ```
-git clone git@github.com:EmanAwadAli/NasNav-Task.git
+git clone git@github.com:EmanAwadAli/Task.git
 ```
 
 ###### Install npm packages
