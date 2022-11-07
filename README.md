@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# 🎯 Nasnav interview task
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Overview
 
-## Available Scripts
+#### 📑 In this task , I created a simple single product page using react. I implemented [this design](https://xd.adobe.com/view/2186e175-b022-45db-a2f4-c9ba6e4bde30-74d5/) in react following these rules:
 
-In the project directory, you can run:
+- **File types should be js + jsx + scss.**
 
-### `npm start`
+- **Folder structure:**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  - public/images for static images.
+  - src/images for dynamic images (dummy data images).
+  - src/services for api calls (dummy data for the test).
+  - src/components for other react components.
+  - src/pages for router pages.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Data should be passed via props or returned by an api.**
+- **Should depend on two colors in css variables ( --primary-color , --secondary-color ).**
+- **Should use lazy loading at least at one component.**
+- **Shouldn't use hooks.**
+- **Shouldn't use redux.**
+- **The only required functionality is “add to cart”.**
+  - add to cart functionality can be divided in 2 cases:
+    - **Empty cart:**
+      - Cart icon should have a badge containing 0 when cart is empty
+      - Clicking on the top cart icon should show the empty cart dropdown
+    - **Non empty cart:**
+      - Cart icon should have a badge containing the number of cart items
+      - Clicking on the top cart icon should show cart items dropdown
+    - **In both cases Pressing the "Add to cart" button should increment the items at cart by quantity.**
 
-### `npm test`
+## 📥 Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In order to run this project you will need to install [node.js](https://nodejs.org/en/) globally on your device after that :
 
-### `npm run build`
+###### Clone Project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+git clone git@github.com:EmanAwadAli/Task.git
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+###### Install npm packages
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm i
+```
 
-### `npm run eject`
+###### Add Bootstrap
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+npm i bootstrap
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+###### Add sass
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+npm i sass
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+###### Add Slick Slider
 
-## Learn More
+```
+npm i react-slick --save
+```
+###### Add Swiper Slider
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+npm i swiper
+```
+###### Start Your Project
+```
+npm start
+```
+**👉 LocalHost Pages Access Link** :  ```http://localhost:3000/Task```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**👉 GitHub Pages Access Link** : [**NasNav Interview Task**](https://emanawadali.github.io/Task)
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
