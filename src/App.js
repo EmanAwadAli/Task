@@ -78,17 +78,6 @@ class App extends Component {
     });
   }
 
-  // Update Cart Function
-  updateCartHandler = (count, product) => {
-    const currentCount = this.state.cartCount;
-    const currentCartItems = [...this.state.cartItems];
-    currentCartItems.push(product)
-    this.setState({
-      cartCount: currentCount + parseInt(count),
-      cartItems: currentCartItems
-    });
-  }
-
   // Add To Cart Function
   addToCartHandler = (product, qty) => {
     const exist = this.state.cartItems.find(item => item.id === product.id);
