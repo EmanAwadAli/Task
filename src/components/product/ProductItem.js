@@ -24,7 +24,7 @@ const ProductItem = ( { product }) => {
                         <span className="main-price">{product.price} <small className="currency">LE</small></span>
                     }
                     </p>                                        
-                    <span className="brand"><img src={require(`../../images/${product.brand.logo}`)} alt="adidas" className="img-fluid"/></span>
+                    <span className="brand"><img src={require(`../../images/brands/${product.brand.logo}`)}  alt="adidas" className="img-fluid"/></span>
                 </div>
                 <div className="rate">
                     <StarRate stars={product.stars}/>
